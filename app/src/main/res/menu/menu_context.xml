@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Lock"
+        android:numericShortcut="0"/>
+    <item android:title="Unlock"
+        android:numericShortcut="1"/>
+    <item android:title="Lock forever"
+        android:numericShortcut="2"/>
+</menu>

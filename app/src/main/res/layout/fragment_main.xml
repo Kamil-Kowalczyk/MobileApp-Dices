@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainFragment">
+
+    <CheckBox
+        android:id="@+id/checkBoxMainFragSum"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="Total points up" />
+
+    <TextView
+        android:id="@+id/textViewMainFragSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="Points in the throw: 0"/>
+
+    <Button
+        android:id="@+id/buttonMainFragThrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Throw" />
+
+</LinearLayout>

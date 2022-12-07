@@ -17,21 +17,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dice_empty" />
+            android:src="@drawable/dice_empty" />
 
         <ImageView
             android:id="@+id/imageViewDice2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dice_empty" />
+            android:src="@drawable/dice_empty" />
 
         <ImageView
             android:id="@+id/imageViewDice3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dice_empty" />
+            android:src="@drawable/dice_empty" />
     </LinearLayout>
 
     <LinearLayout
@@ -44,38 +44,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dice_empty" />
+            android:src="@drawable/dice_empty" />
 
         <ImageView
             android:id="@+id/imageViewDice5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dice_empty" />
+            android:src="@drawable/dice_empty" />
 
         <ImageView
             android:id="@+id/imageViewDice6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dice_empty" />
+            android:src="@drawable/dice_empty" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonThrow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Throw" />
 
-    <CheckBox
-        android:id="@+id/checkBoxSum"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.dices.MainFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Total points up" />
-
-    <TextView
-        android:id="@+id/textViewSum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_main" />
 </LinearLayout>

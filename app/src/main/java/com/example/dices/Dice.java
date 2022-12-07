@@ -9,15 +9,17 @@ public class Dice {
     private boolean isLocked = false;
     private boolean isLockedForever = false;
 
-    public Dice(int resourceId, ImageView imageView, int diceValue) {
-        this.resourceId = resourceId;
+    public Dice( ImageView imageView, int diceValue) {
         this.imageView = imageView;
-        this.diceValue = diceValue;
+        setDiceValue(diceValue);
     }
 
     public void setDiceValue(int value) {
         diceValue = value;
         switch (value){
+            case 0:
+                resourceId = R.drawable.dice_empty;
+                break;
             case 1:
                 resourceId = R.drawable.dice_1;
                 break;
@@ -47,13 +49,10 @@ public class Dice {
         isLockedForever = lockedForever;
     }
 
-    public void setResourceId(int resourceId) {
-        this.resourceId = resourceId;
+    public void setResourceForImageView() {
+        imageView.setImageResource(resourceId);
     }
 
-    public void setImageView(ImageView imageView) {
-        this.imageView = imageView;
-    }
 
     public int getResourceId() {
         return resourceId;
